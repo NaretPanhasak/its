@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naret Panhasak - IT Support Intern CV</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .page {
+            background-color: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 40px auto;
+            padding: 40px 50px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 30px;
+        }
+
+        .header-text {
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .job-title {
+            color: #0056b3;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .objective {
+            margin-top: 10px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #555;
+            font-style: italic;
+        }
+
+        .photo-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+        }
+
+        .left-col {
+            width: 32%;
+            flex-shrink: 0;
+        }
+
+        .right-col {
+            flex-grow: 1;
+        }
+
+        h3.section-title {
+            color: #0056b3;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .left-col h3.section-title:first-child,
+        .right-col h3.section-title:first-child {
+            margin-top: 0;
+        }
+
+        .info-block {
+            margin-bottom: 15px;
+        }
+
+        .info-label {
+            font-weight: 700;
+            font-size: 13px;
+            display: block;
+            color: #000;
+        }
+
+        .info-text {
+            font-size: 13px;
+            color: #444;
+            word-wrap: break-word;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .right-col ul {
+            list-style: disc;
+            padding-left: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .right-col li {
+            margin-bottom: 6px;
+        }
+
+        .skill-item, .training-item, .edu-item {
+            margin-bottom: 12px;
+        }
+
+        .edu-school {
+            font-weight: 700;
+            font-size: 13px;
+        }
+        
+        .edu-detail {
+            font-size: 12px;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .edu-years {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .tech-list {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .tech-category {
+            font-weight: 700;
+            color: #0056b3;
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: block;
+            color: #222;
+        }
+
+        .experience-header {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        .experience-meta {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .reference-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .ref-block {
+            width: 48%;
+        }
+
+        .ref-name {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .ref-detail {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: #fff;
+            }
+
+            .page {
+                width: 100%;
+                margin: 0;
+                padding: 20px;
+                box-shadow: none;
+                min-height: auto;
+            }
+
+            header {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .header-text {
+                margin-top: 15px;
+            }
+
+            .content-wrapper {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .left-col {
+                width: 100%;
+                order: 1;
+                border-bottom: 2px solid #f0f0f0;
+                padding-bottom: 20px;
+            }
+            
+            .right-col {
+                width: 100%;
+                order: 2;
+            }
+
+            .reference-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .ref-block {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .page {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+            a[href]:after {
+                content: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <div class="header-text">
+                <h1>Naret Panhasak</h1>
+                <div class="job-title">IT Support Intern</div>
+                <div class="objective">
+                    Motivated IT student with strong technical skills in hardware/software troubleshooting, networking basics, 
+                    and customer service. Seeking an IT Support internship to provide technical assistance and gain hands-on 
+                    experience in enterprise IT environments.
+                </div>
+            </div>
+            <div class="photo-container">
+                <img src="Profile2.jpg" alt="Naret Panhasak">
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            
+            <aside class="left-col">
+                <h3 class="section-title">CONTACT</h3>
+                
+                <div class="info-block">
+                    <span class="info-label">Phone</span>
+                    <span class="info-text">+855 92 591 926</span>
+                </div>
+
+                <div class="info-block">
+                    <span class="info-label">Email</span>
+                    <span class="info-text">naret.panhasak0904@gmail.com</span>
+                </div>
+
+                <div class="info-block">
+                    <span class="info-label">Address</span>
+                    <span class="info-text">Tuek Thla, Sen Sok,<br>Phnom Penh</span>
+                </div>
+
+                <h3 class="section-title">TECHNICAL SKILLS</h3>
+                
+                <div class="info-block">
+                    <div class="tech-list"><span class="tech-category">Operating Systems:</span> Windows 10/11, macOS, Linux (Ubuntu)</div>
+                    <div class="tech-list"><span class="tech-category">Hardware:</span> PC Assembly, Laptop Repair, Peripheral Setup</div>
+                    <div class="tech-list"><span class="tech-category">Software:</span> MS Office 365, Google Workspace, Antivirus Tools</div>
+                    <div class="tech-list"><span class="tech-category">Networking:</span> TCP/IP Basics, WiFi Setup, Router Configuration</div>
+                    <div class="tech-list"><span class="tech-category">Troubleshooting:</span> Hardware/Software Issues, Network Connectivity</div>
+                    <div class="tech-list"><span class="tech-category">Remote Support:</span> TeamViewer, AnyDesk, Remote Desktop</div>
+                    <div class="tech-list"><span class="tech-category">Ticketing Systems:</span> Basic Knowledge of IT Service Management</div>
+                </div>
+
+                <h3 class="section-title">SOFT SKILLS</h3>
+                <div class="info-block">
+                    <div class="skill-item">Problem-Solving & Critical Thinking</div>
+                    <div class="skill-item">Customer Service & Communication</div>
+                    <div class="skill-item">Patient & Detail-Oriented</div>
+                    <div class="skill-item">Fast Learner & Adaptable</div>
+                    <div class="skill-item">Team Collaboration</div>
+                </div>
+
+                <h3 class="section-title">EDUCATION</h3>
+                <div class="edu-item">
+                    <div class="edu-school">Royal University of Phnom Penh</div>
+                    <div class="edu-detail">Bachelor's Degree in Computer Science</div>
+                    <div class="edu-years">2023 - 2026 (Current)</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-school">Bati High School</div>
+                    <div class="edu-detail">Takéo — Baccalaureate</div>
+                    <div class="edu-years">2022 - 2023</div>
+                </div>
+
+                <h3 class="section-title">CERTIFICATIONS</h3>
+                <div class="info-block">
+                    <div class="training-item">
+                        <div class="edu-school">Royal University of Phnom Penh</div>
+                        <div class="edu-detail">Computer Science</div>
+                        <div class="edu-years">2023 - 2027</div>
+                    </div>
+                    <div class="training-item">
+                        <div class="edu-school">ISTAD</div>
+                        <div class="edu-detail">Web Development</div>
+                        <div class="edu-years">2024 - 2025</div>
+                    </div>
+                </div>
+
+                <h3 class="section-title">LANGUAGES</h3>
+                <div class="info-block">
+                    <div><strong>Khmer:</strong> Native</div>
+                    <div style="margin-top:5px;"><strong>English:</strong> Good (Reading, Writing, Speaking)</div>
+                    <div style="margin-top:5px;"><strong>Chinese:</strong> Basic</div>
+                </div>
+            </aside>
+
+            <section class="right-col">
+                <h3 class="section-title">IT SUPPORT EXPERIENCE</h3>
+
+                <div class="experience-header">Volunteer IT Support - University Lab</div>
+                <div class="experience-meta">Royal University of Phnom Penh | 2024 - Present</div>
+                <ul>
+                    <li>Assisted students and staff with computer setup, software installation, and troubleshooting</li>
+                    <li>Performed basic hardware maintenance including RAM upgrades, storage replacement, and cleaning</li>
+                    <li>Configured Windows OS settings, user accounts, and network connectivity</li>
+                    <li>Resolved printer issues, driver installations, and peripheral device problems</li>
+                    <li>Documented common technical issues and created simple user guides</li>
+                    <li>Provided remote assistance using TeamViewer for off-campus support</li>
+                </ul>
+
+                <div class="experience-header">Family & Friends Technical Support</div>
+                <div class="experience-meta">Informal Experience | 2022 - Present</div>
+                <ul>
+                    <li>Regularly helped family and friends with computer and smartphone issues</li>
+                    <li>Set up home WiFi networks, configured routers, and troubleshot connectivity problems</li>
+                    <li>Removed malware and viruses, installed antivirus software</li>
+                    <li>Recovered lost data, backed up files, and transferred data between devices</li>
+                    <li>Explained technical concepts in simple terms for non-technical users</li>
+                </ul>
+
+                <h3 class="section-title">RELEVANT PROJECTS</h3>
+
+                <span class="project-title">PC Building & Configuration Project</span>
+                <ul>
+                    <li>Assembled a custom desktop PC from components (CPU, RAM, GPU, Storage, PSU)</li>
+                    <li>Installed Windows 11, configured BIOS settings, and installed drivers</li>
+                    <li>Set up dual-boot system (Windows 11 + Ubuntu Linux)</li>
+                    <li>Configured network settings, security settings, and user accounts</li>
+                    <li>Created documentation for build process and troubleshooting tips</li>
+                </ul>
+
+                <span class="project-title">Home Network Setup & Optimization</span>
+                <ul>
+                    <li>Set up home WiFi network with proper security (WPA2/WPA3)</li>
+                    <li>Configured router settings including DHCP, port forwarding, and QoS</li>
+                    <li>Troubleshot connectivity issues using ping, ipconfig, and tracert commands</li>
+                    <li>Optimized WiFi signal placement and channel selection</li>
+                    <li>Set up network printer sharing for multiple devices</li>
+                </ul>
+
+                <span class="project-title">Software Troubleshooting & Optimization</span>
+                <ul>
+                    <li>Diagnosed and resolved Windows errors (blue screen, startup issues, slow performance)</li>
+                    <li>Used Task Manager, Event Viewer, and System Configuration tools</li>
+                    <li>Removed bloatware and optimized startup programs</li>
+                    <li>Performed disk cleanup, defragmentation, and system updates</li>
+                    <li>Created system restore points and recovery media</li>
+                </ul>
+
+                <h3 class="section-title">WHAT I CAN DO FOR YOUR COMPANY</h3>
+                <ul>
+                    <li><strong>User Support:</strong> Help end-users with daily technical issues via phone, email, or in-person</li>
+                    <li><strong>Hardware Setup:</strong> Install and configure desktops, laptops, printers, and peripherals</li>
+                    <li><strong>Software Installation:</strong> Install and configure Windows, Office 365, and business applications</li>
+                    <li><strong>Network Support:</strong> Assist with WiFi connectivity, network troubleshooting, and basic router setup</li>
+                    <li><strong>Troubleshooting:</strong> Diagnose and resolve hardware/software issues systematically</li>
+                    <li><strong>Documentation:</strong> Create user guides, maintain IT inventory, and document solutions</li>
+                    <li><strong>Quick Learner:</strong> Able to learn new systems and technologies quickly</li>
+                </ul>
+
+                <h3 class="section-title">REFERENCE</h3>
+                <div class="reference-container">
+                    <div class="ref-block">
+                        <div class="ref-name">Available upon request</div>
+                        <div class="ref-detail">Additional academic and professional references available</div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
